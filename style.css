@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Actor&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Actor', sans-serif;
+    background-color: #ffffff;
+}
+
+ul li,
+ul li a{
+    font-weight: 500;
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+#header{
+    margin: auto;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 5%;
+}
+.navlinks{
+    list-style: none;
+}
+.nav-link{
+
+    display:inline-block;
+    padding: 0 20px;
+    text-align: center;
+}
+
+#main, footer{
+    padding-top: 150px;
+    padding-left: 15%;
+    padding-right: 15%;
+    
+}
+main h1{
+    padding-top: 3rem;
+    text-align: center;
+    margin: 15px 15px;
+}
+#msg{
+    display:block;
+    justify-content: center;
+    margin-bottom: 50px;
+    
+}
+#form
+{
+    display: block;
+    text-align: center;
+}
+#email{
+    margin-top: 40px;
+    width: 250px;
+    height: 30px;
+    border: solid 1px #000;
+    border-radius:30px;
+}
+#submit{
+    padding: 10px 10px;
+    border-radius: 50px;
+    border:solid rgb(247, 171, 31);
+    background-color: rgb(255, 236, 68);
+}
+#submit:hover{
+    background-color: rgb(247, 171, 31);
+    cursor: pointer;
+}
+#sections{
+    display: inline;
+    justify-content: center;
+    margin-top: 30px;
+
+}
+.deals{
+    text-align: left;
+    margin: 20px 100px;
+}
+.title{
+    text-align: center;
+    margin: 20px 10px;
+}
+#movie{
+    margin-top: 40px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#product{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.product_section{
+    display: block;
+    border-radius: 30px;
+    padding: 10px 10px;
+    border: solid 5px rgb(218, 161, 56);
+    margin: 50px 50px;
+    text-align: center;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: stretch;
+}
+.select_btn{
+    margin: 20px 0;
+    padding:5px 15px;
+    border: solid 1px rgb(247, 171, 31);
+    background-color: rgb(255, 236, 68);
+    text-transform: uppercase;
+}
+.select_btn:hover{
+    background-color: rgb(247, 171, 31);
+    cursor: pointer;
+}
+@media all and (max-width:790px){
+    iframe{
+        width: 350px;
+        height: auto;
+    }
+}
+@media all and (max-width:900px){
+    #product{
+        display: block;
+        justify-content: center;
+    }
+    .product_section{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+}
